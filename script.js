@@ -4,7 +4,7 @@ const containerVideos = document.querySelector(".videos__container");
 async function buscarEMostrarVideos() {
   try {
     const busca = await axios.get(
-      "https://gist.githubusercontent.com/antonio-evaldo/e8a63621b51c883931eb3fa3a3eca990/raw/12f5c46ee6dd00d03c051adadaf341e06452cea0/videos.txt"
+      "https://gist.githubusercontent.com/WellingtonTorres/92c6d653efb043ce818ed2a4dfb500b4/raw/7141df8c0c084ce280738d438cf6e5d0811fbbeb/gistfile1.txt"
     );
     const videos = await busca.data;
 
