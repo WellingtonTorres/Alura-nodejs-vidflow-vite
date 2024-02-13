@@ -2,9 +2,7 @@ import axios from "axios";
 const containerVideos = document.querySelector(".videos__container");
 
 async function buscarEMostrarVideos() {
-  const urlVideos = import.meta.env.PROD
-    ? "https://gist.githubusercontent.com/WellingtonTorres/92c6d653efb043ce818ed2a4dfb500b4/raw/7141df8c0c084ce280738d438cf6e5d0811fbbeb/gistfile1.txt"
-    : "http://localhost:3000/videos";
+  const urlVideos = import.meta.env.VITE_URL_VIDEOS;
 
   console.log(import.meta.env);
   console.log(urlVideos);
